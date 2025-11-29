@@ -93,7 +93,7 @@ body {
   border-radius: 5px;
 }
 input:active::placeholder {
-  color: red;
+  color: var(--error-color);
 }
 .emailSection button {
   background-color: hsl(234, 29%, 20%);
