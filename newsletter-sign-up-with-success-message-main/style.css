@@ -140,7 +140,6 @@ input:active::placeholder {
   align-items: flex-start;
   background-color: white;
   position: absolute;
-  z-index: 3;
   height: auto;
   width: 40vw;
   padding: 30px 30px;
@@ -221,7 +220,6 @@ input:active::placeholder {
     align-items: flex-start;
     background-color: white;
     position: static;
-    z-index: 3;
     height: 100vh;
     width: 100vw;
     border-radius: none;
