@@ -177,14 +177,14 @@ input:active::placeholder {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: auto;
+    height: 100vh;
     border-radius: 0;
     padding: 0;
   }
   .signUpBox img {
     content: url("assets/images/illustration-sign-up-mobile.svg");
     position: sticky;
-    height: 40vh;
+    height: 35vh;
     width: 100vw;
     border-radius: 0;
     max-width: 100%;
