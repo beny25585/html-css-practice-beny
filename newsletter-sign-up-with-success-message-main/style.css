@@ -123,6 +123,9 @@ input:active::placeholder {
 .allCheckMarks {
   margin-bottom: 20px;
 }
+.companyEmail {
+  font-weight: bold;
+}
 
 .successMessege {
   display: none;
