@@ -30,8 +30,6 @@ body {
 .textSide {
   display: flex;
   flex-direction: column;
-  height: fit-content;
-  width: fit-content;
   grid-area: text-side;
 }
 .textSide h1 {
