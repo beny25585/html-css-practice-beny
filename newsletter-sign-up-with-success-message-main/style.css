@@ -12,7 +12,7 @@ body {
   justify-content: center;
 }
 
-.sign-up-box {
+.signUpBox {
   background-color: aliceblue;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -23,23 +23,23 @@ body {
   height: auto;
   grid-template-areas: "text-side image-side";
 }
-.sign-up-box.active {
+.signUpBox.active {
   display: none;
 }
 
-.text-side {
+.textSide {
   display: flex;
   flex-direction: column;
   height: fit-content;
   width: fit-content;
   grid-area: text-side;
 }
-.text-side h1 {
+.textSide h1 {
   font-size: clamp(0.7rem, 4vw, 3rem);
   font-weight: 800;
 }
 
-.text-side p {
+.textSide p {
   font-size: clamp(0.6rem, 1vw, 1.2rem);
   font-weight: 400;
 }
@@ -48,7 +48,7 @@ body {
   align-items: center;
   justify-items: center;
 }
-.sign-up-box img {
+.signUpBox img {
   grid-area: image-side;
   height: 90%;
   max-width: 90%;
@@ -65,23 +65,23 @@ body {
   gap: 10px;
 }
 
-.email-section {
+.emailSection {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 90%;
 }
 
-.email-section h4 {
+.emailSection h4 {
   margin: 0;
 }
-.email-section .email {
+.emailSection .email {
   opacity: 0.7;
   height: 30px;
   border: solid 1px gray;
   border-radius: 5px;
 }
-.email-section .email.active {
+.emailSection .email.active {
   color: red;
   background-color: rgba(233, 157, 157, 0.511);
   opacity: 0.7;
@@ -92,7 +92,7 @@ body {
 input:active::placeholder {
   color: red;
 }
-.email-section button {
+.emailSection button {
   background-color: hsl(234, 29%, 20%);
   color: white;
   height: 45px;
@@ -101,20 +101,20 @@ input:active::placeholder {
   border-radius: 5px;
   border: none;
 }
-.email-section button:hover {
+.emailSection button:hover {
   background: linear-gradient(90deg, #ff4f81, #ff8a24);
   box-shadow: 0 10px 25px rgba(255, 90, 80, 0.4);
 }
-.error-message {
+.errorMessage {
   display: none;
 }
-.error-message.active {
+.errorMessage.active {
   display: block;
   color: red;
   font-size: 0.8rem;
   text-align: right;
 }
-.title-and-error {
+.titleAndError {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -171,7 +171,7 @@ input:active::placeholder {
 }
 
 @media (max-width: 500px) {
-  .sign-up-box {
+  .signUpBox {
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -179,7 +179,7 @@ input:active::placeholder {
     border-radius: 0;
     padding: 0;
   }
-  .sign-up-box img {
+  .signUpBox img {
     content: url("assets/images/illustration-sign-up-mobile.svg");
     position: sticky;
     height: 40vh;
@@ -188,22 +188,22 @@ input:active::placeholder {
     max-width: 100%;
   }
 
-  .text-side {
+  .textSide {
     align-items: right;
     text-align: left;
     padding: 20px 20px;
   }
-  .text-side h1 {
+  .textSide h1 {
     font-size: clamp(1.5rem, 8vw, 3rem);
   }
-  .text-side p {
+  .textSide p {
     font-size: clamp(0.8rem, 3vw, 1.1rem);
   }
-  .email-section h4 {
+  .emailSection h4 {
     text-align: left;
   }
 
-  .email-section {
+  .emailSection {
     width: 100%;
   }
   .checkMarks img {

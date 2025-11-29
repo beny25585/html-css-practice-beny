@@ -1,8 +1,8 @@
-const signUpBox = document.querySelector(".sign-up-box");
+const signUpBox = document.querySelector(".signUpBox");
 const successMessege = document.querySelector(".successMessege");
 const submitBtn = document.querySelector(".submit");
 const dismissBtn = document.querySelector(".dismiss");
-const errorMassege = document.querySelector(".error-message");
+const errorMassege = document.querySelector(".errorMessage");
 const emailInput = document.querySelector(".email");
 
 function checkValidEmail(input) {
@@ -16,12 +16,11 @@ submitBtn.addEventListener("click", (e) => {
     successMessege.classList.add("active");
     signUpBox.classList.add("active");
     errorMassege.classList.remove("active");
-    console.log(successMessege);
-  } else {
-    console.log(errorMassege);
-    errorMassege.classList.add("active");
-    emailInput.classList.add("active");
+    return;
   }
+  console.log(errorMassege);
+  errorMassege.classList.add("active");
+  emailInput.classList.add("active");
 });
 
 dismissBtn.addEventListener("click", () => {
