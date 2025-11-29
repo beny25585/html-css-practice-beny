@@ -18,7 +18,6 @@ submitBtn.addEventListener("click", (e) => {
     errorMassege.classList.remove("active");
     return;
   }
-  console.log(errorMassege);
   errorMassege.classList.add("active");
   emailInput.classList.add("active");
 });

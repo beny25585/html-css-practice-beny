@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  --error-color: #ff3333;
+  --text-color: #333;
+  --primary: #4f7df3;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -108,7 +113,7 @@ input:active::placeholder {
 }
 .errorMessage.active {
   display: block;
-  color: red;
+  color: var(--error-color);
   font-size: 0.8rem;
   text-align: right;
 }
